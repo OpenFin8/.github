@@ -2,6 +2,10 @@
 
 **Consent-first financial data sharing for every jurisdiction.**
 
+**Website: [openfin8.dev](https://openfin8.dev/)** - the full documentation:
+per-market product pages, the generated API references, the kernel SDK
+section, and the security model.
+
 OpenFin8 is the open-finance vertical of the [Sentin8](https://github.com/Sentin8)
 platform: the consent authority, recipient registry, and per-jurisdiction
 adapters that let an institution share its customers' financial data with
@@ -76,3 +80,12 @@ Sentin8:Storage (statement bytes), Sentin8:Flow (step execution).
 
 **Architecture & Design:** OpenFin8 and its underlying concepts were
 designed by [Hamid Jahanzad](https://www.linkedin.com/in/hamidjahanzad/).
+## Repositories
+
+| Repo | Purpose |
+|---|---|
+| [`OpenFin8/openfin8-site`](https://github.com/OpenFin8/openfin8-site) | the openfin8.dev website |
+| [`OpenFin8/openfin8-core`](https://github.com/OpenFin8/openfin8-core) | the kernel library |
+| [`OpenFin8/openfin8-ca`](https://github.com/OpenFin8/openfin8-ca) | the Canadian adapter |
+| [`OpenFin8/openfin8-us`](https://github.com/OpenFin8/openfin8-us) | the US adapter |
+| [`OpenFin8/openfin8-uk`](https://github.com/OpenFin8/openfin8-uk) | the UK adapter |
