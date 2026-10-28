@@ -1,6 +1,6 @@
 # OpenFin8 - Open Finance Vertical
 
-**Consent-first financial data sharing for every jurisdiction.**
+**Secure Post-Quantum-Safe Consent-First Open Finance Platform That Heals and Scales Itself.**
 
 **Website: [openfin8.dev](https://openfin8.dev/)** - the full documentation:
 per-market product pages, the generated API references, the kernel SDK
