@@ -89,3 +89,8 @@ designed by [Hamid Jahanzad](https://www.linkedin.com/in/hamidjahanzad/).
 | [`OpenFin8/openfin8-ca`](https://github.com/OpenFin8/openfin8-ca) | the Canadian adapter |
 | [`OpenFin8/openfin8-us`](https://github.com/OpenFin8/openfin8-us) | the US adapter |
 | [`OpenFin8/openfin8-uk`](https://github.com/OpenFin8/openfin8-uk) | the UK adapter |
+| [`OpenFin8/openfin8-br`](https://github.com/OpenFin8/openfin8-br) | the Brazil adapter (designed) |
+| [`OpenFin8/openfin8-eu`](https://github.com/OpenFin8/openfin8-eu) | the EU adapter (designed) |
+| [`OpenFin8/openfin8-au`](https://github.com/OpenFin8/openfin8-au) | the Australia adapter (designed) |
+| [`OpenFin8/openfin8-eopenca`](https://github.com/OpenFin8/openfin8-eopenca) | eOpenCA - the recipient app (formerly bank8's eFintech) |
+| [`OpenFin8/openfin8-e2e`](https://github.com/OpenFin8/openfin8-e2e) | the recipient-journey e2e suite |
