@@ -26,9 +26,9 @@ role**, and recipient-only fintechs compose the recipient plane standalone.
 | **openfin8-core** | — | — | the kernel library: consent ledger + lifecycle, recipient registry (two-ledger model), CSDF data minimization, HMAC-signed notifications, the runtime [`Profile`](https://github.com/OpenFin8/openfin8-core/blob/main/src/profile.rs) every identity string derives from | 
 | **OpenFin8:CA** | Canada | FDX v6.x (consumer-driven banking) | serving - `/fdx/v{major}/*` provider + `/v1/recipient/*` recipient surfaces, version-configurable (`OPENFIN8_CA_VERSION`) |
 | **OpenFin8:US** | United States | FDX v6.x | serving - identical surface over the same kernel, US identity |
-| **OpenFin8:UK** | United Kingdom | OBL Read/Write API v3.1.x | in design (OBARCH-5): FAPI 1 Advanced ceremony, intent-based consents, JWS signing, OB Directory trust |
+| **OpenFin8:UK** | United Kingdom | OBL Read/Write API v3.1.x | serving (OBARCH-5) - the intent-based consent model (client-credentials staging + the 24h staged-intent sweep), the FAPI 1 Advanced ceremony + detached JWS signing (fail-closed, OB Directory trust), the `{Data, Links, Meta}` envelope + the OBL error rules, the aisp/pisp/cbpii surfaces (domestic payments, VRP with control-parameter enforcement, funds confirmations, event notifications) |
 | OpenFin8:BR | Brazil | Open Finance Brasil | designed (research complete) |
-| OpenFin8:EU | European Union | Berlin Group openFinance | designed |
+| **OpenFin8:EU** | European Union | Berlin Group openFinance | serving (OBARCH-7) - the XS2A consent + authorisation model (the four-state machine + the pre-step), the three SCA approach ceremonies, eIDAS QWAC/QSEALC secret-referenced trust + bank-by-bank DCR, PIS + signing baskets, AIS/PIIS + the honest extended services |
 | OpenFin8:AU | Australia | CDR | designed |
 
 ## How a bank composes the provider role
@@ -78,8 +78,6 @@ Sentin8:Storage (statement bytes), Sentin8:Flow (step execution).
 
 ---
 
-**Architecture & Design:** OpenFin8 and its underlying concepts were
-designed by [Hamid Jahanzad](https://www.linkedin.com/in/hamidjahanzad/).
 ## Repositories
 
 | Repo | Purpose |
@@ -88,9 +86,14 @@ designed by [Hamid Jahanzad](https://www.linkedin.com/in/hamidjahanzad/).
 | [`OpenFin8/openfin8-core`](https://github.com/OpenFin8/openfin8-core) | the kernel library |
 | [`OpenFin8/openfin8-ca`](https://github.com/OpenFin8/openfin8-ca) | the Canadian adapter |
 | [`OpenFin8/openfin8-us`](https://github.com/OpenFin8/openfin8-us) | the US adapter |
-| [`OpenFin8/openfin8-uk`](https://github.com/OpenFin8/openfin8-uk) | the UK adapter |
+| [`OpenFin8/openfin8-uk`](https://github.com/OpenFin8/openfin8-uk) | the UK adapter (OB R/W API) |
 | [`OpenFin8/openfin8-br`](https://github.com/OpenFin8/openfin8-br) | the Brazil adapter (designed) |
-| [`OpenFin8/openfin8-eu`](https://github.com/OpenFin8/openfin8-eu) | the EU adapter (designed) |
+| [`OpenFin8/openfin8-eu`](https://github.com/OpenFin8/openfin8-eu) | the EU adapter (XS2A) |
 | [`OpenFin8/openfin8-au`](https://github.com/OpenFin8/openfin8-au) | the Australia adapter (designed) |
 | [`OpenFin8/openfin8-eopenca`](https://github.com/OpenFin8/openfin8-eopenca) | eOpenCA - the recipient app (formerly bank8's eFintech) |
 | [`OpenFin8/openfin8-e2e`](https://github.com/OpenFin8/openfin8-e2e) | the recipient-journey e2e suite |
+
+---
+
+**Architecture & Design:** OpenFin8 and its underlying concepts were
+designed by [Hamid Jahanzad](https://www.linkedin.com/in/hamidjahanzad/).
