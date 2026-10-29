@@ -23,7 +23,7 @@ role**, and recipient-only fintechs compose the recipient plane standalone.
 
 | Service | Jurisdiction | Standard | Status |
 |---|---|---|---|
-| **openfin8-core** | — | — | the kernel library: consent ledger + lifecycle, recipient registry (two-ledger model), CSDF data minimization, HMAC-signed notifications, the runtime [`Profile`](https://github.com/OpenFin8/openfin8-core/blob/main/src/profile.rs) every identity string derives from | 
+| **openfin8-core** | - | - | the kernel library: consent ledger + lifecycle, recipient registry (two-ledger model), CSDF data minimization, HMAC-signed notifications, the runtime [`Profile`](https://github.com/OpenFin8/openfin8-core/blob/main/src/profile.rs) every identity string derives from | 
 | **OpenFin8:CA** | Canada | FDX v6.x (consumer-driven banking) | serving - `/fdx/v{major}/*` provider + `/v1/recipient/*` recipient surfaces, version-configurable (`OPENFIN8_CA_VERSION`) |
 | **OpenFin8:US** | United States | FDX v6.x | serving - identical surface over the same kernel, US identity |
 | **OpenFin8:UK** | United Kingdom | OBL Read/Write API v3.1.x | serving - the intent-based consent model (client-credentials staging + the 24h staged-intent sweep), the FAPI 1 Advanced ceremony + detached JWS signing (fail-closed, OB Directory trust), the `{Data, Links, Meta}` envelope + the OBL error rules, the aisp/pisp/cbpii surfaces (domestic payments, VRP with control-parameter enforcement, funds confirmations, event notifications) |
