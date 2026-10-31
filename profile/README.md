@@ -19,6 +19,17 @@ sector-agnostic by legislation. Banking is OpenFin8's first sector, not its
 container: **[Bank8](https://github.com/Bank8-dev) composes the provider
 role**, and recipient-only fintechs compose the recipient plane standalone.
 
+> **A note on our history.** If you found your way here looking for
+> **PRIME** - `authPrime`, `exchangePRIME`, and family - you're in the
+> right place. Those projects are this one: our open-source
+> work is now rebranded to **Sentin8** (this vertical is **OpenFin8**) to
+> avoid confusion with other brand names and products. At the same
+> time we left our self-hosted **Apache SVN** behind and moved
+> everything to GitHub. The lineage goes back further than you might
+> expect - here's a fun LinkedIn read from 2017, when the platform was
+> still called PRIME and still lived on SVN:
+> [Advanced Hybrid Securities Exchange](https://www.linkedin.com/pulse/advanced-hybrid-securities-exchange-hamid-jahanzad/).
+
 ## Services
 
 | Service | Jurisdiction | Standard | Status |
